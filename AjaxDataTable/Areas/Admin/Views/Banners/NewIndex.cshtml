@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "NewIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+
+    <table id="tblData">
+        <thead>
+            <tr>
+                <th align="left">id</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>CoverImageUrl</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+       $(document).ready(function () {
+           $("#tblData").DataTable();
+            alert();
+        });
+    </script>
+}
+
